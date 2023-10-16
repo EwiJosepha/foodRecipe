@@ -145,7 +145,6 @@ span {
   gap: 10px;
   font-size: 8px;
   color: #999393;
-  margin-left:  110px;
 }
 
 p {
@@ -171,6 +170,7 @@ p {
 }
 
 .latestrecipe {
+  margin: 0 auto;
   width: 95%;
   background-color: fff;
   display: grid;
@@ -184,4 +184,108 @@ p {
 
 .bestmeal img {
   width: 80%;
+}
+#description {
+  width: 130px;
+  color: #312f2f;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.searchmore {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+
+}
+
+#btn {
+  border: none;
+  background-color: #b34e5b;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#btnn {
+  background-color: #ffa500;
+  border: 1px solid #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  /* margin: 10px auto 100px; */
+  cursor: pointer;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+form {
+  display: flex;
+  width: 95%;
+  max-width: 600px;
+  height: 80px;
+  margin: auto;
+}
+
+#input {
+  width: 75%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  /* background: transparent; */
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 12 px;
+  /* border-radius: 10px; */
+}
+
+#deliciousness {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #4e4b4b;
+}
+
+.form {
+  background-color: #ff8595;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#enjoy {
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#span {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #312f2f;
 }
