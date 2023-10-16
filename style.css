@@ -16,13 +16,13 @@
   padding: 20px;
 }
 
-.facebk{
+.facebk {
   display: flex;
   padding: 8px;
   gap: 5px;
 }
 
-.search{
+.search {
   display: flex;
   padding: 8px;
   gap: 5px;
@@ -30,7 +30,7 @@
 }
 
 .tastebite {
- text-align: center;
+  text-align: center;
 }
 
 .menu {
@@ -60,7 +60,7 @@
 .landingimage img {
   position: relative;
   width: 100%;
-} 
+}
 
 .landingimage h1 {
   display: flex;
@@ -73,14 +73,14 @@
 }
 
 .popularcategory {
- padding-top: 30px;
- width: 95%;
- margin: 0 auto;
+  padding-top: 30px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 h2 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .categoryimages {
@@ -88,7 +88,7 @@ h2 {
   gap: 0.5rem;
 }
 
-.imagetitle  {
+.imagetitle {
   width: 20%;
 }
 
@@ -97,6 +97,91 @@ h2 {
   border-radius: 50%;
 }
 
+.favorites {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 95%;
+} 
+
 span {
   font-size: 10px;
+}
+
+.carousel {
+  width: 95%;
+  background-color: fff;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  /* overflow: hidden; */
+}
+
+.top img {
+  width: 80%;
+}
+
+.imagetitl {
+  width: 15%;
+  display: flex;
+  padding-top: 20px;
+}
+
+/* .imagetitl img {
+  width: 100%;
+} */
+
+#delicious {
+  padding-top: 30px;
+}
+
+.fa-solid {
+  color: #ffa500;
+}
+
+.date {
+  padding-top: 30px;
+  display: flex;
+  gap: 10px;
+  font-size: 8px;
+  color: #999393;
+  margin-left:  110px;
+}
+
+p {
+  font-size: 14px;
+  font-family: sans serif;
+}
+
+#super {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.recipe {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.latest {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 95%;
+}
+
+.latestrecipe {
+  width: 95%;
+  background-color: fff;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.latest {
+  width: 95%;
+}
+
+.bestmeal img {
+  width: 80%;
 }
