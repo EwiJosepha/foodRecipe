@@ -113,7 +113,7 @@ span {
 }
 
 .carousel {
-  width: 95%;
+  width: 100%;
   background-color: fff;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -122,7 +122,7 @@ span {
 }
 
 .top img {
-  width: 80%;
+  width: 95%;
 }
 
 .imagetitl {
