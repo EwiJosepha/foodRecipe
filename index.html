@@ -1,295 +1,369 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Food Recipe</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="icons">
-        <div class="facebk">
-         <i class="fa-brands fa-instagram"></i>
-         <i class="fa-brands fa-facebook"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Food Recipe</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="icons">
+      <div class="facebk">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-square-twitter"></i>
 
+      </div>
+      <div class="search">
+        <img src="public/images/search.png.png">
+        <button>Login</button>
+      </div>
+    </div>
+
+    <div class="tastebite">
+      <img src="public/images/Logo 2.png">
+    </div>
+
+    <div class="menu">
+      <span>Home</span>
+      <span>RecipePage</span>
+      <span>Pages</span>
+      <span>Buy</span>
+    </div>
+
+    <div class="landingimage">
+      <img
+        src="https://media.istockphoto.com/id/1366924735/fr/photo/fromage-burrata-au-jambon-de-parme-et-feuilles-de-salade.webp?b=1&s=170667a&w=0&k=20&c=1hE7TCaJKKR9BmaIyt8aOBh4eXZT23ALKWWriMhmaL0="
+        alt="Noodles">
+
+      <h1>Delicious Salade</h1>
+    </div>
+
+    <div class="popularcategory">
+      <h2>popular Category</h2>
+      <div class="categoryimages">
+        <div class="imagetitle">
+          <img
+            src="https://media.istockphoto.com/id/1473906544/fr/photo/gros-plan-sur-une-d%C3%A9licieuse-pizza-ronde-avec-prosciutto-mozzarella-et-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=Wa_3rOa9hgwEJOtcNrMICcD-7rrVbxPio_WOlZPMvHk="
+            alt="popular Meals">
+          <span>Pizza</span>
         </div>
-        <div class="search">
-          <img src="public/images/search.png.png">
-          <button>Login</button>
+        <div class="imagetitle">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+          <span>Pasta</span>
+        </div>
+        <div class="imagetitle">
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+            alt="popular Meals">
+          <span>Vegan</span>
+        </div>
+        <div class="imagetitle">
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+            alt="popular Meals">
+          <span>Desserts</span>
+        </div>
+        <div class="imagetitle">
+          <img
+            src="https://media.istockphoto.com/id/1492006908/fr/photo/deux-verres-de-pudding-au-%C3%A0-la-banane-avec-des-graines-de-gros-plan.webp?b=1&s=170667a&w=0&k=20&c=mq8HBSUHKlXHKmJ5lkQcQdc4XMS8OBVwd4xNQL0AKLA="
+            alt="popular Meals">
+          <span>Smoothies</span>
+        </div>
+        <div class="imagetitle">
+          <img
+            src="https://media.istockphoto.com/id/1370745667/fr/photo/petit-d%C3%A9jeuner-avec-petits-pains-%C5%93ufs-confiture-fromage-et-jambon-et-une-tasse-de-caf%C3%A9-fond.webp?b=1&s=170667a&w=0&k=20&c=3O8IjosxenEw2l_1KDVs4mywwOoN-7BsNdlPKwqOdL4="
+            alt="popular Meals">
+          <span>Breakfast</span>
         </div>
       </div>
+    </div>
 
-      <div class="tastebite">
-        <img src="public/images/Logo 2.png">
-      </div>
+    <div class="favorites">
+      <h1 id="super">Super Delicious</h1>
+      <div class="carousel">
+        <div class="top">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
 
-      <div class="menu">
-        <span>Home</span>
-        <span>RecipePage</span>
-        <span>Pages</span>
-        <span>Buy</span>
-      </div>
-
-      <div class="landingimage">
-        <img src="https://media.istockphoto.com/id/1366924735/fr/photo/fromage-burrata-au-jambon-de-parme-et-feuilles-de-salade.webp?b=1&s=170667a&w=0&k=20&c=1hE7TCaJKKR9BmaIyt8aOBh4eXZT23ALKWWriMhmaL0=" alt="Noodles">
-
-        <h1>Delicious Salade</h1>
-      </div>
-
-      <div class="popularcategory">
-        <h2>popular Category</h2>
-        <div class="categoryimages">
-          <div class="imagetitle">
-            <img src="https://media.istockphoto.com/id/1473906544/fr/photo/gros-plan-sur-une-d%C3%A9licieuse-pizza-ronde-avec-prosciutto-mozzarella-et-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=Wa_3rOa9hgwEJOtcNrMICcD-7rrVbxPio_WOlZPMvHk=" alt="popular Meals">
-            <span>Pizza</span>
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="imagetitle">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-            <span>Pasta</span>
-          </div>
-          <div class="imagetitle">
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="popular Meals">
-            <span>Vegan</span>
-          </div>
-          <div class="imagetitle">
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="popular Meals">
-            <span>Desserts</span>
-          </div>
-          <div class="imagetitle">
-            <img src="https://media.istockphoto.com/id/1492006908/fr/photo/deux-verres-de-pudding-au-%C3%A0-la-banane-avec-des-graines-de-gros-plan.webp?b=1&s=170667a&w=0&k=20&c=mq8HBSUHKlXHKmJ5lkQcQdc4XMS8OBVwd4xNQL0AKLA=" alt="popular Meals">
-            <span>Smoothies</span>
-          </div>
-          <div class="imagetitle">
-            <img src="https://media.istockphoto.com/id/1370745667/fr/photo/petit-d%C3%A9jeuner-avec-petits-pains-%C5%93ufs-confiture-fromage-et-jambon-et-une-tasse-de-caf%C3%A9-fond.webp?b=1&s=170667a&w=0&k=20&c=3O8IjosxenEw2l_1KDVs4mywwOoN-7BsNdlPKwqOdL4=" alt="popular Meals">
-            <span>Breakfast</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="favorites">
-        <h1 id="super">Super Delicious</h1>
-        <div class="carousel">
-          <div class="top">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
-          </div>
-          <div class="top">
-            
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
-               <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
-          </div>
-          <div class="top">
-            
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
-          </div>
-          <div class="top">
-            
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
-          </div>
-          <div class="top">
-            
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
-          </div>
-          <div class="top">
-            
-            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
-            <div class="imagetitl">
-              <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-              <span>Tricia Albert</span>
-            </div>
-            <div class="date">
-              <i class="fa-regular fa-message">Yesterday</i>
-              <i class="fa-regular fa-calendar-minus">456</i>
-            </div>
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
         </div>
-       
-      </div>
+        <div class="top">
 
-      <div class="latest">
-        <h1 id="recipe">Latest Recipe</h1>
-        <div class="latestrecipe">
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-            <p id="description">Caramel strawberry milk Shake shake shake</p>
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
+        </div>
+        <div class="top">
 
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
 
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
+        </div>
+        <div class="top">
 
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
+        </div>
+        <div class="top">
 
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
+        </div>
+        <div class="top">
 
+          <img
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlZ2FuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
+          <div class="imagetitl">
+            <img
+              src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+              alt="popular Meals">
+            <span>Tricia Albert</span>
           </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
-          </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
-          </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
-          </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
-          </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
-          </div>
-          <div class="bestmeal">
-            <img src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864=" alt="popular Meals">
-
+          <div class="date">
+            <i class="fa-regular fa-message">Yesterday</i>
+            <i class="fa-regular fa-calendar-minus">456</i>
           </div>
         </div>
       </div>
 
-      <div class="searchmore">
-        <button id="btn">Load More</button>
-      </div>
+    </div>
 
-      <div class="form">
-        <h1 id="deliciousness">Deliciousness to your inbox</h1>
-        <p id="enjoy">Enjoy weekly handpicked and recipes Recommendation</p>
+    <div class="latest">
+      <h1 id="recipe">Latest Recipe</h1>
+      <div class="latestrecipe">
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+          <p id="description">Caramel strawberry milk Shake shake shake</p>
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+        <div class="bestmeal">
+          <img
+            src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+            alt="popular Meals">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="searchmore">
+      <button id="btn">Load More</button>
+    </div>
+
+    <div class="form">
+      <h1 id="deliciousness">Deliciousness to your inbox</h1>
+      <p id="enjoy">Enjoy weekly handpicked and recipes Recommendation</p>
       <form>
         <input type="text" id="input" placeholder="search image now">
         <button id="btnn">Search</button>
@@ -300,7 +374,8 @@
       </div>
     </div>
 
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

@@ -26,7 +26,6 @@
   display: flex;
   padding: 8px;
   gap: 5px;
-
 }
 
 .tastebite {
@@ -102,7 +101,7 @@ h2 {
   padding-top: 35px;
   padding-bottom: 35px;
   width: 95%;
-} 
+}
 
 span {
   font-size: 10px;
@@ -200,8 +199,6 @@ p {
   align-items: center;
   justify-content: center;
   color: #fff;
-
-
 }
 
 #btn {
@@ -237,11 +234,9 @@ form {
   outline: none;
   border: none;
   background-color: white;
-  /* background: transparent; */
   color: #fff;
   font-size: 18px;
   padding: 10px 12 px;
-  /* border-radius: 10px; */
 }
 
 #deliciousness {
