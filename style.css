@@ -208,13 +208,13 @@ p {
 
 #btn {
   border: none;
-  background-color: #b34e5b;
+  background-color: #ffdbdb;
   padding: 20px;
   border-radius: 8px;
 }
 
 #btnn {
-  background-color: #ffa500;
+  background-color: #f77a21;
   border: 1px solid #fff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -231,6 +231,7 @@ form {
   max-width: 600px;
   height: 80px;
   margin: auto;
+  background-color: #ffdbdb;
 }
 
 #input {
@@ -238,7 +239,7 @@ form {
   height: 100%;
   outline: none;
   border: none;
-  background-color: white;
+  background-color: #fff;
   color: #fff;
   font-size: 18px;
   padding: 10px 12 px;
@@ -249,17 +250,20 @@ form {
   padding-bottom: 30px;
   margin: 0 auto;
   text-align: center;
-  width: 50%;
-  font-size: 35px;
+  width: 33%;
+  font-size: 30px;
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   color: #4e4b4b;
 }
 
 .form {
-  background-color: #ff8595;
+  background-color: #fabea8;
   padding-top: 20px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #enjoy {
@@ -269,11 +273,15 @@ form {
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 30px;
-  width: 50%;
+  width: 30%;
 }
 
 ::placeholder {
   text-align: center;
+}
+
+.fa-solid {
+  color: #4e4b4b;
 }
 
 #span {
@@ -284,8 +292,53 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: 14px;
+  font-size: 10px;
   font-family: sans-serif;
-  font-weight: 500;
   color: #312f2f;
+}
+
+.footer{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 30px;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+}
+
+.logotext {
+  width: 30%;
+}
+
+.down-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+#abtus {
+  font-size: 10px;
+  color: #aba0a0;
+  
+}
+
+#abt {
+  font-size: 10px;
+  color: #aba0a0;
+}
+
+#downlogo {
+  width: 45%;
+}
+
+.flex {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
