@@ -102,11 +102,13 @@
 }
 
 .imagetitle {
-  width: 30%;
+  width: 40%;
 }
 
 .imagetitle img {
   width: 100%;
+  height: 100px;
+  padding: 10px;
   border-radius: 50%;
   box-shadow: 2px 2px 1px 2px #fff;
 }
@@ -146,6 +148,8 @@ span {
 
 .fa-solid {
   color: #ffa500;
+  font-size: 8px;
+  padding-top: 8px;
 }
 
 .date {
