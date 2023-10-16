@@ -39,6 +39,11 @@
   gap: 15px;
 }
 
+.fa-brands {
+  color: #bfb7b7;
+  background: none;
+}
+
 .menu span {
   padding-top: 30px;
   padding-bottom: 30px;
