@@ -49,8 +49,9 @@
 
 .top {
   border: 2px solid fff;
-  box-shadow: 2px 2px 2px 8px #fdfbfb;
+  box-shadow: 5px 5px 12px 5px #c3b4b4;
   border-radius: 9px;
+  background-color: #fff;
 }
 
 .menu span {
@@ -60,6 +61,10 @@
   color: #312f2f;
   font-family: sans-serif;
   font-weight: 600;
+}
+
+span {
+  padding: 0;
 }
 
 .landingimage {
@@ -123,6 +128,11 @@ span {
   font-size: 10px;
 }
 
+.fa-magnifying-glass {
+  padding: 5px;
+  font-size: 16px;
+}
+
 .carousel {
   width: 100%;
   background-color: fff;
@@ -132,7 +142,10 @@ span {
 }
 
 .top img {
-  width: 95%;
+  width: 100%;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .imagetitl {
@@ -152,7 +165,9 @@ span {
 }
 
 .date {
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
   display: flex;
   gap: 10px;
   font-size: 8px;
@@ -190,13 +205,16 @@ p {
   gap: 10px;
 }
 
-.latest {
-  width: 95%;
+.bestmeal img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.bestmeal img {
-  width: 80%;
-  border-radius: 8px;
+.bestmeal {
+  border: 2px solid fff;
+  box-shadow: 5px 5px 12px 5px #c3b4b4;
+  border-radius: 9px;
+  background-color: #fff;
 }
 
 #description {
@@ -205,6 +223,7 @@ p {
   font-size: 10px;
   font-family: sans-serif;
   font-weight: 400;
+  padding: 20px;
 }
 
 .searchmore {
@@ -255,19 +274,20 @@ form {
 }
 
 #deliciousness {
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin: 0 auto;
   text-align: center;
-  width: 33%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 65%;
+  margin: auto;
   font-size: 30px;
   font-family: sans-serif;
   font-weight: 600;
-  color: #4e4b4b;
+  color: #000;
 }
 
 .form {
-  background-color: #fabea8;
+  background-color: #ffd7c9;
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -319,6 +339,12 @@ form {
   padding-top: 30px;
 }
 
+.fa-bars {
+  color: #312f2f;
+  padding: 5px;
+  font-size: 17px;
+}
+
 .about {
   display: flex;
   gap: 30px;
@@ -341,6 +367,12 @@ form {
   
 }
 
+.hidden {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
 #abt {
   font-size: 10px;
   color: #aba0a0;
@@ -355,4 +387,162 @@ form {
   display: flex;
   justify-content: space-between;
   gap: 5px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.mobilefooter {
+  display: none;
+}
+
+.selectt {
+  display: none;
+}
+
+.select .opt1 {
+  display: none;
+
+}
+
+.select .opt2 {
+  display: none;
+}
+
+.select .opt3 {
+  display: none;
+}
+
+.fa-copyright {
+  font-size: 6px;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 375px) {
+
+  .mobilefooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logotext {
+    display: none;
+  }
+
+  .selectt {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #bite2 {
+    width: 50%;
+    padding-top: 10px;
+  }
+
+  form {
+    display: none;
+  }
+  
+  .selectt .opt2 {
+    border: none;
+    border-bottom: 1px solid #b7b2b2;
+  }
+
+  .down-sec {
+    display: none;
+  }
+  
+  .selectt .opt3 {
+    border: none;
+    border-bottom: 1px solid #bbb4b4;
+  }
+
+  .selectt .opt1 {
+    border: none;
+    border-bottom: 1px solid #cbc5c5;
+  }
+
+  .twitt {
+    padding-top: 30px;
+    gap: 30px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 10px;
+    max-width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    gap: 4px;
+    padding-bottom: 35px;
+  }
+
+  #inputfooter {
+    width: 92%;
+    height: 50px;
+    border: none;
+    padding: 10px;
+  }
+
+  #btnnfooter {
+    width: 92%;
+    height: 50px;
+    background-color: #f77a21;
+    border: none;
+    padding: 10px;
+  }
+
+  .categoryimages {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-left: 25px;
+   }
+  .imagetitle {
+    width: 95%;
+  }
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-left: 10px;
+  }
+
+  #jambon {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .latestrecipe{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 10px;
+  } 
+
+   .tastebite img {
+    display: none;
+  }
+
+  .hidden {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .facebk{
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  #bite {
+    width: 20%;
+    padding-top: 10px;
+  }
 }
