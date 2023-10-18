@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#details {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  height: 100vh;
+}
+
+.top-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bit {
+  width: 20%;
+}
+
+.arrowlogo {
+  padding-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  display: flex;
+  gap: 5px;
+  font-family: sans-serif;
+  font-size: 8px;
+}
+
+/* .logoimage {
+  width: 100%;
+} */
+
+.logoimage img {
+  border-radius: 50%;
+  /* height: 15px; */
+}
+
+.fa-solid {
+  font-size: 8px;
+}
+
+.tastebite {
+  width: 100%;
+}
+
+span {
+  font-size: 6px;
+}
+
+.flexstar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.tastebite img {
+  width: 40%;
+}
+
+.smallimage {
+  width: 50%;
+}
+
+.smallimage img {
+  width: 20%;
+}
+
+.messag {
+  display: flex;
+}
+
+.mes {
+  display: flex;
+}
+
+p {
+  font-size: 8px;
+}
+
+.fa-regular {
+  font-size: 8px;
+}
+
+
+.backgr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.backgr img {
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  gap: 8px;
+}
+
+.fa-solid {
+  color: #ffa500;
+  font-size: 8px;
+  padding-bottom: -5px;
+}
+
+#tp {
+  padding-bottom: 25px;
+}

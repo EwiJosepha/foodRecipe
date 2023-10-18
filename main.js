@@ -52,7 +52,9 @@ async function renderpopular() {
         <img
           src="${meal.strMealThumb}"
           alt="popular Meals">
-        <span>${meal.strMeal}</span>
+         
+        <h5 id="popcatt">${meal.strMeal}</h5>
+     
       </div>
   `
   })
