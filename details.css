@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding-bottom: 20px;
 }
 
 .fourimage {
@@ -26,14 +27,20 @@
 }
 
 .top-page {
+  padding-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#bit {
-  width: 20%;
+#gla {
+  color: #1e1d1d;
+  font-size: 14px;
 }
+
+/* #bit {
+  width: 20%;
+} */
 
 .arrowlogo {
   padding-bottom: 15px;
@@ -44,12 +51,9 @@
 
 .home {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
-/* .logoimage {
-  width: 100%;
-} */
 
 .logoimage img {
   border-radius: 50%;
@@ -60,13 +64,9 @@
   font-size: 8px;
 }
 
-.tastebite {
-  width: 100%;
-}
 
 #spann {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -92,15 +92,21 @@
 
 .smallimage {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20%;
 }
 
 .ingredients {
+  font-family: sans-serif;
+  flex-wrap: wrap;
   padding-top: 20px;
   width: 50%;
 }
 
 #ingredients{
+  font-weight: 600;
+  padding: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -111,6 +117,12 @@ h5 {
 
 .smallimage img {
   width: 20%;
+}
+
+
+li {
+  font-family: sans-serif;
+  padding: 10px;
 }
 
 .messag {
@@ -136,11 +148,9 @@ p {
 }
 
 ul {
+  padding: 10px;
   padding-left: 15px;
 }
-
-
-
 
 .backgr{
   display: flex;
@@ -167,9 +177,9 @@ ul {
 }
 
 .gain {
+  font-family: sans-serif;
   font-size: 8px;
 }
-
 
 .fa-solid {
   color: #ffa500;
@@ -214,20 +224,29 @@ ul {
 .calo {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #ddd2d2;
+  border-bottom: 2px solid #f5efef;
+  font-family: sans-serif;
   padding: 10px;
+  padding-bottom: 10px;
 }
 
 .nutrition {
   background-color: #fbf6f6;
+  box-shadow: 2px 2px 3px 4px #fff;
   border: none;
-  border-radius: 10px;
-  border-bottom-left-radius: 2px;
+  border-radius: 15px;
 }
 
 #freshh {
-  padding-top: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
   padding-bottom: 20px;
+}
+
+#nutfact {
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
 }
 
 #orange {
@@ -242,6 +261,7 @@ ul {
 }
 
 .instruc p{
+  font-family: sans-serif;
   font-size: 16px;
   padding: 10px;
 }
@@ -251,7 +271,13 @@ ul {
   width: 80%;
 }
 
+#caramel {
+ font-weight: 800;
+ font-family: sans-serif; 
+}
+
 #instructions {
+  font-family: sans-serif; 
   padding-top: 20px;
 }
 
@@ -270,6 +296,7 @@ ul {
 .divcard img {
   width: 100%;
 }
+
 .text {
   display: flex;
   flex-direction: column;
@@ -284,15 +311,23 @@ form {
   flex-direction: column;
   width: 95%;
   max-width: 600px;
-  height: 50px;
+  height: 70px;
   margin: auto;
   padding-bottom: 10px;
+  gap: 10px;
 }
 
 .divv {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#med {
+  width: 10%;
+  height: 18%;
+  border-radius: 50%;
 }
 
 #enjoy {
@@ -306,6 +341,7 @@ form {
 }
 
 #input {
+  padding: 10px;
   width: 92%;
   height: 50px;
   border: none;
@@ -318,13 +354,78 @@ form {
   background-color: #f77a21;
   border: none;
   padding: 10px;
+  padding-bottom: 10px;
 }
 
-.form {
-  background-color: #ffd7c9;
-  padding-top: 20px;
-  padding-bottom: 30px;
+.formm {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 20px;
+  width: 90%;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 10px;
+  background-color: #ffd7c9;
+  padding-bottom: 20px;
+}
+
+.alreadymade {
+  padding: 10px;
+}
+
+.btnmade {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+#orangg {
+  width: 100px;
+  height: 8px;
+  background-color: #f77a21;
+}
+
+#txtcenter {
+  text-align: center;
+}
+
+#already {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 376px) {
+  .containersflex {
+    display: block;
+  }
+
+  .ingredients {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruc {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nutrition {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .twowrapper {
+    width: 100%;
+  }
+
+  .fourimage {
+    width: 100%;
+  }
 }

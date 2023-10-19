@@ -6,6 +6,8 @@ const bestmeal = document.getElementById('apiphotos')
 const latestrec = document.getElementById('latestrecipee')
 let keyword = "meal"
 let page = 1
+const mylink = " https://www.themealdb.com/api.php"
+
 
 
 async function renderMeals() {
@@ -19,22 +21,27 @@ async function renderMeals() {
  meal.forEach((category)=> {
 
   latestrec.innerHTML +=  ` 
-   
+    <a href="/deatails.html" target="_blank">
       <div class="bestmeal" id="bestmeall"> 
         <img
           src="${category.strMealThumb}"
           alt="popular Meals">
+          </a>
         <h6>${category.strMeal}</h6>
       </div>
 `
+document.getElementById('bestmeall').addEventListener('click', ()=> {
+  console.log("item name: ", category.strMeal);
+})
+
   })
+
 
 }
 
 
 
 renderMeals()
-
 
 
 async function renderpopular() {
@@ -54,7 +61,7 @@ async function renderpopular() {
           alt="popular Meals">
          
         <h5 id="popcatt">${meal.strMeal}</h5>
-     
+       
       </div>
   `
   })
