@@ -11,6 +11,20 @@
   height: 100vh;
 }
 
+.twowrapper {
+  width: 70%;
+}
+
+.envelop {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fourimage {
+  width: 30%;
+}
+
 .top-page {
   width: 100%;
   display: flex;
@@ -30,9 +44,7 @@
 
 .home {
   display: flex;
-  gap: 5px;
-  font-family: sans-serif;
-  font-size: 8px;
+  gap: 10px;
 }
 
 /* .logoimage {
@@ -52,16 +64,26 @@
   width: 100%;
 }
 
-span {
-  font-size: 6px;
+#spann {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .flexstar {
+  border: none;
+  border-bottom: 1px solid #e3dbdb;
+  box-shadow: 2px 2px 2px 2px #fff;
   width: 100%;
   display: flex;
+  gap: 8px;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-top: 10px;
+}
+
+#alb {
+  font-size: 7px;
 }
 
 .tastebite img {
@@ -69,7 +91,22 @@ span {
 }
 
 .smallimage {
+  display: flex;
+  width: 20%;
+}
+
+.ingredients {
+  padding-top: 20px;
   width: 50%;
+}
+
+#ingredients{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h5 {
+  padding: 10px;
 }
 
 .smallimage img {
@@ -78,10 +115,12 @@ span {
 
 .messag {
   display: flex;
+  gap: 8px;
 }
 
 .mes {
   display: flex;
+  gap: 8px;
 }
 
 p {
@@ -91,6 +130,16 @@ p {
 .fa-regular {
   font-size: 8px;
 }
+
+.ul2 {
+  width: 80%;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+
 
 
 .backgr{
@@ -109,12 +158,173 @@ p {
   gap: 8px;
 }
 
+.wrapper {
+  padding-top: 30px;
+}
+
+.trend-up {
+  color: #1e1d1d;
+}
+
+.gain {
+  font-size: 8px;
+}
+
+
 .fa-solid {
   color: #ffa500;
   font-size: 8px;
   padding-bottom: -5px;
 }
 
-#tp {
+#tpp {
+  padding-top: 25px;
+  font-size: 15px;
+  width: 80%;
   padding-bottom: 25px;
+}
+
+.backgr {
+  display: flex;
+}
+
+.prep {
+  text-transform: uppercase;
+  padding-top: 10px;
+  display: flex;
+}
+
+.time {
+  border-left: 1px solid #b6afaf;
+  padding: 15px;
+}
+
+#prep {
+  color: #b6afaf;
+
+}
+
+.containersflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.calo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd2d2;
+  padding: 10px;
+}
+
+.nutrition {
+  background-color: #fbf6f6;
+  border: none;
+  border-radius: 10px;
+  border-bottom-left-radius: 2px;
+}
+
+#freshh {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#orange {
+  width: 15px;
+  height: 17px;
+  border-radius: 50%;
+  padding: 3px;
+  padding-left: 5px;
+  font-size: 15px;
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.instruc p{
+  font-size: 16px;
+  padding: 10px;
+}
+
+.instruc {
+  padding-top: 20px;
+  width: 80%;
+}
+
+#instructions {
+  padding-top: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+}
+
+.divcard {
+  width: 30%;
+  border: 1px solid #ece7e7;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 1px #fff;
+}
+
+.divcard img {
+  width: 100%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 600px;
+  height: 50px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.divv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#enjoy {
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+#input {
+  width: 92%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+}
+
+#btnn {
+  width: 92%;
+  height: 50px;
+  background-color: #f77a21;
+  border: none;
+  padding: 10px;
+}
+
+.form {
+  background-color: #ffd7c9;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
