@@ -16,23 +16,34 @@ async function renderMeals() {
   const response = await fetch(url)
   const data = await response.json()
   console.log(data);
-  let meal = data.meals
-  console.log();
- meal.forEach((category)=> {
+  
+  data.meals.forEach((meal) => {
+    const mealDiv = document.createElement("div");
+    const aTag = document.createElement("a");
+    const imageTag = document.createElement("img");
+    const hTag = document.createElement("h6");
 
-  latestrec.innerHTML +=  ` 
-    <a href="/deatails.html" target="_blank">
-      <div class="bestmeal" id="bestmeall"> 
-        <img
-          src="${category.strMealThumb}"
-          alt="popular Meals">
-          </a>
-        <h6>${category.strMeal}</h6>
-      </div>
-`
-document.getElementById('bestmeall').addEventListener('click', ()=> {
-  console.log("item name: ", category.strMeal);
-})
+    mealDiv.className = "bestmeal";
+    mealDiv.id = "bestmeall";
+    aTag.href = "/deatails.html";
+
+    imageTag.src = `${meal.strMealThumb}`;
+    imageTag.alt = "popular Meals";
+    hTag.innerHTML = `${meal.strMeal}`;
+
+    aTag.appendChild(imageTag);
+    mealDiv.appendChild(aTag);
+    mealDiv.appendChild(hTag);
+
+    latestrec.appendChild(mealDiv);
+
+    aTag.addEventListener("click", () => {
+      sessionStorage.setItem("mealId", meal.idMeal);
+    })
+
+    document.getElementById('bestmeall').addEventListener('click', () => {
+      console.log("item name: ", meal.strMeal);
+    })
 
   })
 
