@@ -39,6 +39,8 @@ async function renderMeals() {
 
     aTag.addEventListener("click", () => {
       sessionStorage.setItem("mealId", meal.idMeal);
+
+      sessionStorage.setItem("strCategory", meal.strCategory)
     })
 
     document.getElementById('bestmeall').addEventListener('click', () => {
