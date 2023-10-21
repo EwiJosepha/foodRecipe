@@ -16,7 +16,7 @@ async function renderMeals() {
   const response = await fetch(url)
   const data = await response.json()
   console.log(data);
-  
+
   data.meals.forEach((meal) => {
     const mealDiv = document.createElement("div");
     const aTag = document.createElement("a");
@@ -40,14 +40,22 @@ async function renderMeals() {
     aTag.addEventListener("click", () => {
       sessionStorage.setItem("mealId", meal.idMeal);
 
-      sessionStorage.setItem("strCategory", meal.strCategory)
+      // sessionStorage.setItem("strCategory", meal.strCategory)
     })
 
     document.getElementById('bestmeall').addEventListener('click', () => {
       console.log("item name: ", meal.strMeal);
     })
 
+
   })
+
+
+  // const fevMealId = sessionStorage.getItem("mealId")
+
+  // const favMeal = data.meals.find((meal)=> meal.idMeal === fevMealId)
+
+  // console.log("favMeal: ", favMeal)
 
 
 }
@@ -85,8 +93,7 @@ async function renderpopular() {
 
 
 
+
 renderpopular()
 
 document.querySelector('#app').innerHTML
-
-
