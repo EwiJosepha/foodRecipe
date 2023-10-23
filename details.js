@@ -5,24 +5,28 @@ import { getLocalStorage, getSessionStorage, saveToLocal, toggleFavorite } from 
 const arra_ingrd = []; // array to hold all ingredients
 let resultt = null;
 
+const updatemealname = document.querySelector('.strmeal')
+function nameupdate () {
+  
+}
 
-const backgr = document.querySelector(".backgr")
 //play video
 let arrvideo = []
 
-async function disvideo (mealId) {
-  const strvideoapi = "https://www.themealdb.com/api/json/v1/1/search.php?s="
-  const apifetchh = await fetch(strvideoapi)
-  const result = await apifetchh.json()
-  const videoomeals  = result.meals
-  let actualvid = videoomeals.find((item)=>{
-    videoomeals === videoomeals.mealId
-  })
-  // console.log(Object.keys(actualvid));
+async function disvideo(actualvid) {
+  //   const strvideoapi = "https://www.themealdb.com/api/json/v1/1/search.php?s="
+  //   const apifetchh = await fetch(strvideoapi)
+  //   const result = await apifetchh.json()
+  //   const videoomeals  = result.meals
+  //   console.log({videoomeals})
+  //   let actualvid = videoomeals[7].strYoutube
+  //   // console.log(Object.keys(actualvid));
 
-  // for(let i = 0; i < videoomeals.length.strYoutube; i ++){
-  //   arrvideo.push(i)
-  // }
+  // // for(const key of videoomeals[key]){
+  // //   console.log(key);
+  // // }
+
+  const backgr = document.querySelector(".backgr")
 
   const splitactualvid = actualvid.split('v=')
   console.log(splitactualvid);
@@ -30,19 +34,15 @@ async function disvideo (mealId) {
   console.log(indexofsplitted);
 
   console.log(actualvid);
-  console.log(videoomeals);
-  videoomeals.forEach((item)=>{
-    backgr.innerHTML =  ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `
-  })
-    
 
- 
- 
+  backgr.innerHTML = ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `;
 
-  
+
+
+
+
+
 }
-
-disvideo ()
 
 
 
@@ -66,7 +66,10 @@ async function description() {
   const res = await fetch(desc_url);
   const data1 = await res.json();
   const current_meal = data1.meals[0];
-  console.log(current_meal);
+
+  console.log({ current_meal });
+
+  disvideo(current_meal.strYoutube);
 
   const display = document.getElementById("instrucc");
 
@@ -89,7 +92,8 @@ async function description() {
     
     <p><span id="orange">1</span>${current_meal.strInstructions}</p>
    
-    </div>`;
+   
+    </div>`
 
   displayIngredients();
 }
@@ -129,7 +133,7 @@ const atagg = document.createElement('a')
 glaa.addEventListener('click', () => {
   const [current] = resultt;
 
-  console.log({current});
+  console.log({ current });
 
   toggleFavorite(current);
 
