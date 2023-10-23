@@ -1,4 +1,32 @@
-const apikey =
+import { getLocalStorage } from "./utils.js"
+
+
+
+const video = document.querySelector('.backgr')
+
+
+const apikey = "https://www.themealdb.com/api/json/v1/1/search.php?s="
+
+async function videodisplay () {
+  const apifetch = await fetch(apikey)
+  const responsss = await apifetch.json()
+  const actualdata = responsss.meals
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   'z6T7x6sCQoqofSxUH49y7JAPgvUYgK072xGpfNbJ2s8'
 // "https://www.themealdb.com/api/json/v1/1/search.php?f=a"
 const latest = document.getElementById('latestt')
@@ -11,7 +39,6 @@ const mylink = " https://www.themealdb.com/api.php"
 
 
 async function renderMeals() {
-
   const url = "https://www.themealdb.com/api/json/v1/1/search.php?s="
   const response = await fetch(url)
   const data = await response.json()
@@ -85,15 +112,50 @@ async function renderpopular() {
        
       </div>
   `
-  })
-
-
-
+  });
 }
-
-
-
 
 renderpopular()
 
-document.querySelector('#app').innerHTML
+
+const displaySuperDelicious = async () => {
+  const carousel = document.querySelector(".carousel");
+
+  const favorites = getLocalStorage("favorites") || [];
+
+  favorites.forEach(fav => {
+    const newItem = document.createElement("div");
+
+    newItem.className = "top";
+
+    newItem.innerHTML = `
+      <img
+        src="${fav.strMealThumb}">
+
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p id="delicious">Delicious Fancy GLAZES BLUEBERRY</p>
+
+      <div class="imagetitll">
+        <img
+          src="https://media.istockphoto.com/id/182924845/fr/photo/spaghetti-%C3%A0-la-bolognaise-avec-feuilles-de-basilic.webp?b=1&s=170667a&w=0&k=20&c=g60SDvd1ZYj4PScloP5L0LSowPAvE64ANLbFsych864="
+          alt="popular Meals" id="pi">
+        <span>Tricia Albert</span>
+      </div>
+      <div class="date">
+        <i class="fa-regular fa-message">Yesterday</i>
+        <i class="fa-regular fa-calendar-minus">456</i>
+      </div>
+    `
+    carousel.appendChild(newItem);
+  })
+
+  console.log({ favorites })
+};
+
+displaySuperDelicious();

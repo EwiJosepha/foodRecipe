@@ -1,9 +1,51 @@
 // const apidescription = "https://www.themealdb.com/api/json/v1/1/search.php?s="
 
-import { getFromStorage } from "./utils";
+import { getLocalStorage, getSessionStorage, saveToLocal, toggleFavorite } from "./utils.js";
 
 const arra_ingrd = []; // array to hold all ingredients
-let relatedData = null;
+let resultt = null;
+
+
+const backgr = document.querySelector(".backgr")
+//play video
+let arrvideo = []
+
+async function disvideo (mealId) {
+  const strvideoapi = "https://www.themealdb.com/api/json/v1/1/search.php?s="
+  const apifetchh = await fetch(strvideoapi)
+  const result = await apifetchh.json()
+  const videoomeals  = result.meals
+  let actualvid = videoomeals.find((item)=>{
+    videoomeals === videoomeals.mealId
+  })
+  // console.log(Object.keys(actualvid));
+
+  // for(let i = 0; i < videoomeals.length.strYoutube; i ++){
+  //   arrvideo.push(i)
+  // }
+
+  const splitactualvid = actualvid.split('v=')
+  console.log(splitactualvid);
+  const indexofsplitted = splitactualvid[1]
+  console.log(indexofsplitted);
+
+  console.log(actualvid);
+  console.log(videoomeals);
+  videoomeals.forEach((item)=>{
+    backgr.innerHTML =  ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `
+  })
+    
+
+ 
+ 
+
+  
+}
+
+disvideo ()
+
+
+
 
 const displayIngredients = () => {
   const displayIngr = document.getElementById("display-ingredients");
@@ -11,13 +53,13 @@ const displayIngredients = () => {
     if (ingr === null) {
       return
     }
-    displayIngr.innerHTML += `<li>${ingr}</li>`;
+    displayIngr.innerHTML += `<li>${ingr}</li>`
   });
 };
 
 let mealId;
 async function description() {
-  mealId = sessionStorage.getItem("mealId");
+  mealId = getSessionStorage("mealId");
 
   const desc_url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
@@ -57,13 +99,13 @@ description();
 const arrrelated = [];
 async function related() {
   // const strcategory = sessionStorage.getItem("strcategory");
-  mealId = sessionStorage.getItem("mealId");
+  mealId = getSessionStorage("mealId");
 
   const relatedApi = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
   const relatedres = await fetch(relatedApi);
-  relatedData = await relatedres.json();
-  const resultt = relatedData.meals
+  const relatedData = await relatedres.json();
+  resultt = relatedData.meals
   console.log(resultt);
 
   resultt.forEach((rel) => {
@@ -85,16 +127,20 @@ const atagg = document.createElement('a')
 
 
 glaa.addEventListener('click', () => {
-  const prev_favorites = getFromStorage("favorites") || [];
-  
-  favor.innerHTML += `<a href="/index.html" target="_blank"><i class="fa-solid fa-bookmark" id="glaa"></i>
-</a>`
+  const [current] = resultt;
+
+  console.log({current});
+
+  toggleFavorite(current);
+
+  //   favor.innerHTML += `<a href="/index.html" target="_blank"><i class="fa-solid fa-bookmark" id="glaa"></i>
+  // </a>`
 
   console.log('helloyjufdx');
 })
 
 async function favoritz() {
-  mealId = sessionStorage.getItem("mealId");
+  mealId = getSessionStorage("mealId");
 
   const relatedApi = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
