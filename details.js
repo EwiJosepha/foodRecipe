@@ -5,13 +5,34 @@ import { getLocalStorage, getSessionStorage, saveToLocal, toggleFavorite } from 
 const arra_ingrd = []; // array to hold all ingredients
 let resultt = null;
 
+//update name
 const updatemealname = document.querySelector('.strmeal')
-function nameupdate () {
-  
+function nameupdate (actual) {
+  updatemealname.innerHTML=
+  `<h1 id="berry">${actual}</h1>`
+  console.log(actual);
 }
 
+//related category
+const divcard = document.querySelector(".divcard")
+
+ async function relatedcategory() {
+  const joshuaa = "ewo"
+  console.log(joshuaa);
+  const catapi =  "https://www.themealdb.com/api/json/v1/1/categories.php"
+  const res = await fetch(catapi)
+  const dataa= await res.json()
+  console.log(dataa);
+
+  divcard.innerHTML 
+ 
+}
+
+relatedcategory()
+
+
+
 //play video
-let arrvideo = []
 
 async function disvideo(actualvid) {
   //   const strvideoapi = "https://www.themealdb.com/api/json/v1/1/search.php?s="
@@ -36,16 +57,7 @@ async function disvideo(actualvid) {
   console.log(actualvid);
 
   backgr.innerHTML = ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `;
-
-
-
-
-
-
 }
-
-
-
 
 const displayIngredients = () => {
   const displayIngr = document.getElementById("display-ingredients");
@@ -70,6 +82,8 @@ async function description() {
   console.log({ current_meal });
 
   disvideo(current_meal.strYoutube);
+  nameupdate(current_meal.strMeal)
+  // relatedcategory(current_meal.strCategory)
 
   const display = document.getElementById("instrucc");
 
@@ -101,29 +115,29 @@ async function description() {
 description();
 
 const arrrelated = [];
-async function related() {
+// async function related() {
   // const strcategory = sessionStorage.getItem("strcategory");
   mealId = getSessionStorage("mealId");
 
   const relatedApi = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
-  const relatedres = await fetch(relatedApi);
-  const relatedData = await relatedres.json();
-  resultt = relatedData.meals
-  console.log(resultt);
+//   const relatedres = await fetch(relatedApi);
+//   const relatedData = await relatedres.json();
+//   resultt = relatedData.meals
+//   console.log(resultt);
 
-  resultt.forEach((rel) => {
-    arrrelated.push(rel)
-    const card = document.getElementById("cardd");
-    card.innerHTML += `<div class="divcard">
-    <img src="${rel.strMealThumb}">
-  </div>`;
-  });
-  // const currentRelated = relatedData.meals
-  // console.log(currentRelated);
-}
+//   resultt.forEach((rel) => {
+//     arrrelated.push(rel)
+//     const card = document.getElementById("cardd");
+//     card.innerHTML += `<div class="divcard">
+//     <img src="${rel.strMealThumb}">
+//   </div>`;
+//   });
+//   // const currentRelated = relatedData.meals
+//   // console.log(currentRelated);
+// }
 
-related();
+// related();
 
 const glaa = document.getElementById("glaa");
 const favor = document.getElementById("favor");
