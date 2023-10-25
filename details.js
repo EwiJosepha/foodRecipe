@@ -54,7 +54,7 @@ async function relatedcategory(actualll) {
 //returning form from index html
 const formm = document.querySelector('.formm')
 formm.innerHTML = 
-   `<h1 id="deliciousness">Deliciousness to your inbox</h1>
+   `<h2 id="deliciousness">Deliciousness to your inbox</h2>
    <p id="enjoy">Enjoy weekly handpicked and recipes Recommendation</p>
   <input type="text" id="inputfooter" placeholder="Email">
   <button id="btnnfooter">Join</button>
@@ -120,7 +120,7 @@ async function description() {
 
   console.log("arar", arra_ingrd);
   display.innerHTML += `<div class="instruc">
-   <p><span id="orange">1</span>${current_meal.strInstructions}</p>
+   <p><span id="orange"></span>${current_meal.strInstructions}</p>
     </div>`;
 
   displayIngredients();
