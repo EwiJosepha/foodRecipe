@@ -122,15 +122,16 @@ const displaySuperDelicious = async () => {
   const carousel = document.querySelector(".carousel");
 
   const favorites = getLocalStorage("favorites") || [];
+  console.log(favorites);
 
   favorites.forEach(fav => {
     const newItem = document.createElement("div");
-
     newItem.className = "top";
 
     newItem.innerHTML = `
       <img
         src="${fav.strMealThumb}">
+        
 
       <div class="stars">
         <i class="fa-solid fa-star"></i>
@@ -151,7 +152,10 @@ const displaySuperDelicious = async () => {
         <i class="fa-regular fa-message">Yesterday</i>
         <i class="fa-regular fa-calendar-minus">456</i>
       </div>
+      
     `
+    console.log(`${fav.strMealThumb}`);
+    console.log(newItem);
     carousel.appendChild(newItem);
   })
 
@@ -159,3 +163,20 @@ const displaySuperDelicious = async () => {
 };
 
 displaySuperDelicious();
+
+export function formexport () {
+return `< div class=" form">
+<h1 id="deliciousness">Deliciousness to your inbox</h1>
+<p id="enjoy">Enjoy weekly handpicked and recipes Recommendation</p>
+<div class="footer-form">
+<input type="text" id="inputfooter" placeholder="Email">
+<button id="btnnfooter">Join</button>
+</div>
+<div class="divv">
+<span id="span">By joining our newsletter you aggree to terms and conditions</span>
+
+</div>`
+}
+
+formexport ()
+

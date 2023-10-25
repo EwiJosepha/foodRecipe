@@ -15,6 +15,11 @@
   width: 70%;
 }
 
+#gain {
+  font-size:  8px;
+  font-family: sans-serif;
+}
+
 .envelop {
   display: flex;
   flex-direction: column;
@@ -35,12 +40,13 @@
 
 #gla {
   color: #1e1d1d;
-  font-size: 14px;
+  font-size:  8px;
 }
 
-/* #bit {
-  width: 20%;
-} */
+#deliciousness {
+  width: fit-content;
+}
+
 
 .arrowlogo {
   padding-bottom: 15px;
@@ -50,6 +56,7 @@
 }
 
 .home {
+  font-family: sans-serif;
   display: flex;
   gap: 30px;
 }
@@ -60,12 +67,13 @@
 }
 
 .fa-solid {
-  font-size: 8px;
+  font-size:  8px;
 }
 
 #spann {
-  font-size: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size:  8px;
+  font-family: sans-serif;
 }
 
 .flexstar {
@@ -81,7 +89,7 @@
 }
 
 #alb {
-  font-size: 7px;
+  font-size:  8px;
 }
 
 .tastebite img {
@@ -102,7 +110,7 @@
   width: 50%;
 }
 
-#ingredients{
+#ingredients {
   font-weight: 600;
   padding: 30px;
   padding-top: 20px;
@@ -116,7 +124,6 @@ h5 {
 .smallimage img {
   width: 20%;
 }
-
 
 li {
   font-family: sans-serif;
@@ -134,14 +141,18 @@ li {
 }
 
 p {
-  font-size: 8px;
+  font-size:  8px;
 }
 
 .fa-regular {
-  font-size: 8px;
+  font-size:  8px;
 }
 
 .ul2 {
+  font-family: sans-serif;
+  font-size:  15px;
+  font-weight: 400;
+  line-height: 2;
   width: 80%;
 }
 
@@ -150,7 +161,7 @@ ul {
   padding-left: 15px;
 }
 
-.backgr{
+.backgr {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,18 +187,19 @@ ul {
 
 .gain {
   font-family: sans-serif;
-  font-size: 8px;
+  font-size:  8px;
 }
 
 .fa-solid {
   color: #ffa500;
-  font-size: 8px;
+  font-size:  8px;
   padding-bottom: -5px;
 }
 
 #tpp {
+  font-family: sans-serif;
   padding-top: 25px;
-  font-size: 15px;
+  font-size:  8px;
   width: 80%;
   padding-bottom: 25px;
 }
@@ -209,7 +221,6 @@ ul {
 
 #prep {
   color: #b6afaf;
-
 }
 
 .containersflex {
@@ -224,11 +235,16 @@ ul {
   justify-content: space-between;
   border-bottom: 2px solid #f5efef;
   font-family: sans-serif;
-  padding: 10px;
+  font-size:  12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #282323;
+  padding: 30px;
   padding-bottom: 10px;
 }
 
 .nutrition {
+  width: 100%;
   background-color: #fbf6f6;
   box-shadow: 2px 2px 3px 4px #fff;
   border: none;
@@ -236,12 +252,16 @@ ul {
 }
 
 #freshh {
+  font-size:  8px;
+  font-weight: 600;
   font-family: sans-serif;
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
 #nutfact {
+  font-size:  14px;
+  font-weight: 600;
   text-align: center;
   font-family: sans-serif;
   padding-top: 10px;
@@ -253,14 +273,16 @@ ul {
   border-radius: 50%;
   padding: 3px;
   padding-left: 5px;
-  font-size: 15px;
+  font-size:  8px;
   background-color: #ffa500;
   color: #fff;
 }
 
-.instruc p{
+.instruc p {
+  line-height: 1.5;
+  font-weight: 400;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size:  14px;
   padding: 10px;
 }
 
@@ -270,22 +292,25 @@ ul {
 }
 
 #caramel {
- font-weight: 800;
- font-family: sans-serif; 
+  font-size:  8px;
+  font-weight: 800;
+  font-family: sans-serif;
 }
 
 #instructions {
-  font-family: sans-serif; 
-  padding-top: 20px;
+  font-family: sans-serif;
+  padding-top: 10px;
 }
 
 .card {
-  display: flex;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 10px;
 }
 
 .divcard {
-  width: 30%;
+  width: 50%;
   border: 1px solid #ece7e7;
   border-radius: 8px;
   box-shadow: 2px 2px 4px 1px #fff;
@@ -322,6 +347,28 @@ form {
   align-items: center;
 }
 
+#btnnfooter {
+  width: 92%;
+  height: 50px;
+  background-color: #f77a21;
+  border: none;
+  padding: 10px;
+}
+
+#inputfooter {
+  width: 92%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+}
+
+.divv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #med {
   width: 10%;
   height: 18%;
@@ -330,7 +377,8 @@ form {
 
 #enjoy {
   text-align: center;
-  font-size: 16px;
+  font-size:  8px;
+  font-weight: 500;
   font-family: sans-serif;
   margin: 0 auto;
   padding-top: 10px;
@@ -362,11 +410,20 @@ form {
   width: 90%;
   padding-left: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
   flex-direction: column;
-  flex-wrap: wrap;
+  font-family: sans-serif;
   padding-top: 10px;
   background-color: #ffd7c9;
   padding-bottom: 20px;
+}
+
+#glaa {
+  font-size:  8px;
+  color: #1e1d1d;
+  background-color: transparent;
 }
 
 .alreadymade {
@@ -397,9 +454,27 @@ form {
   padding-bottom: 20px;
 }
 
+
+@media screen and (max-width: 1044px){
+ 
+#spann {
+  font-weight: 600;
+  font-size:  18px;
+  font-family: sans-serif;
+}
+
+}
+ 
+
 @media screen and (max-width: 376px) {
   .containersflex {
     display: block;
+  }
+
+  #spann {
+    font-weight: 600;
+    font-size:  8px;
+    font-family: sans-serif;
   }
 
   .ingredients {
