@@ -52,7 +52,7 @@ async function renderMeals() {
 
     mealDiv.className = "bestmeal";
     mealDiv.id = "bestmeall";
-    aTag.href = "/deatails.html";
+    aTag.href = "./deatails.html";
 
     imageTag.src = `${meal.strMealThumb}`;
     imageTag.alt = "popular Meals";
