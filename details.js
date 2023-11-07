@@ -63,9 +63,6 @@ formm.innerHTML =
   <span id="span">By joining our newsletter you aggree to terms and conditions</span>
   
   `
-  
-
-
 //play video
 
 async function disvideo(actualvid) {
@@ -190,26 +187,3 @@ async function favoritz() {
 }
 
 favoritz()
-
-// atagg.href="/index.html".target="_blank"
-// console.log(atagg);
-// glaa.append(atagg)
-// console.log('josf');
-// atagg.appendChild(glaa)
-// favor.append('atagg')
-// console.log(atagg);
-
-//   const ancor = document.createElement("a");
-
-//   console.log("hello");
-//   // mealId = sessionStorage.getItem("mealId");
-
-//   ancor.href = "/index.html"
-//   console.log(ancor);
-//   ancor.appendChild(glaa);
-//   console.log(glaa);
-//   glaa.append(ancor);
-// glaa.append(ancor)
-
-// ancor.innerHTML = (glaa)
-// console.log(ancor);
