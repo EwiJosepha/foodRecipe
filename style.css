@@ -21,6 +21,7 @@
   padding: 8px;
   gap: 5px;
 }
+
 .search {
   display: flex;
   padding: 8px;
@@ -218,6 +219,11 @@ span {
 h6 {
   padding: 15px;
   color: rgb(241, 104, 54);
+}
+
+#forinstr {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
 }
 
 #bestmeall img {
