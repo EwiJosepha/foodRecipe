@@ -33,10 +33,6 @@ export const saveSession = (key, value) => {
 //   }
 // }
 
-
-
-
-
 export const toggleFavorite = (current) => {
   const prev_favorites = getLocalStorage("favorites") || [];
   const prev = prev_favorites.find((item) => item?.idMeal == current?.idMeal);

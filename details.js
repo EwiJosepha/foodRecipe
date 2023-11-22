@@ -9,7 +9,8 @@ import {
 
 import { formexport } from "./main.js";
 
-const arra_ingrd = []; // array to hold all ingredients
+const arra_ingrd = [];
+const measuremt = [] // array to hold all ingredients
 let resultt = null;
 
 //update name
@@ -76,7 +77,7 @@ async function disvideo(actualvid) {
 
   console.log(actualvid);
 
-  backgr.innerHTML = ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> `;
+  backgr.innerHTML = ` <iframe width="100%" height="480" src="https://www.youtube.com/embed/${indexofsplitted}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="vid"></iframe> `;
 }
 
 //display ingredients
@@ -91,6 +92,7 @@ const displayIngredients = () => {
 };
 
 let mealId;
+
 async function description() {
 
   mealId = getSessionStorage("mealId");
@@ -116,18 +118,56 @@ async function description() {
   }
 
   console.log("arar", arra_ingrd);
-  display.innerHTML += `<div class="instruc">
-   <p><span id="orange"></span>${current_meal.strInstructions}</p>
-    </div>`;
+  display.innerHTML += `
+   <p id="forinstr">${current_meal.strInstructions}</p>
+  `;
 
   displayIngredients();
 }
 
 description();
 
+async function measuress() {
+
+  mealId = getSessionStorage("mealId");
+
+  const desc_url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
+
+  const res = await fetch(desc_url);
+  const data1 = await res.json();
+  const current_meal = data1.meals[0];
+
+  console.log({ current_meal });
+
+  for (let key of Object.keys(current_meal)) {
+    if (key.slice(0, 10) === "strMeasure" && current_meal[key].trim() !== "") {
+      measuremt.push(current_meal[key]);
+    }
+
+  }
+
+  displaymeasures ()
+
+}
+
+measuress()
+
+function displaymeasures () {
+  const measurements = document.querySelector(".measurement")
+  console.log(measuremt);
+  measuremt?.forEach((measure) => {
+    if (measure === null) {
+      return;
+    }
+    measurements.innerHTML += `<p id="measurr">${measure}</p>`;
+  })
+}
+
+
+
+
 const arrrelated = [];
 async function related() {
-  // const strcategory = sessionStorage.getItem("strcategory");
   mealId = getSessionStorage("mealId");
   const relatedApi = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
   const relatedres = await fetch(relatedApi);
@@ -137,16 +177,11 @@ async function related() {
   resultt.forEach((rel) => {
     arrrelated.push(rel)
     const card = document.getElementById("cardd");
-  //   card.innerHTML += `<div class="divcard">
-  //   <img src="${rel.strMealThumb}">
-  // </div>`;
+
   });
-  // const currentRelated = relatedData.meals
-  // console.log(currentRelated);
+ 
 }
 related();
-
-// const strcategory = sessionStorage.getItem("strcategory");
 mealId = getSessionStorage("mealId");
 
 const relatedApi = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
@@ -156,8 +191,6 @@ const glaa = document.getElementById("glaa");
 const favor = document.getElementById("favor");
 const atagg = document.createElement("a");
 
-// const relatedData = await relatedres.json();
-// resultt = relatedData.meals
 
 glaa.addEventListener("click", () => {
   const [current] = resultt;

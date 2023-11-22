@@ -14,20 +14,7 @@ async function videodisplay () {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'z6T7x6sCQoqofSxUH49y7JAPgvUYgK072xGpfNbJ2s8'
+'z6T7x6sCQoqofSxUH49y7JAPgvUYgK072xGpfNbJ2s8'
 // "https://www.themealdb.com/api/json/v1/1/search.php?f=a"
 const latest = document.getElementById('latestt')
 const bestmeal = document.getElementById('apiphotos')
@@ -66,9 +53,7 @@ async function renderMeals() {
 
     aTag.addEventListener("click", () => {
       sessionStorage.setItem("mealId", meal.idMeal);
-
-      // sessionStorage.setItem("strCategory", meal.strCategory)
-    })
+  })
 
     document.getElementById('bestmeall').addEventListener('click', () => {
       console.log("item name: ", meal.strMeal);
