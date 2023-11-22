@@ -7,11 +7,11 @@ const video = document.querySelector('.backgr')
 
 const apikey = "https://www.themealdb.com/api/json/v1/1/search.php?s="
 
-async function videodisplay () {
+async function videodisplay() {
   const apifetch = await fetch(apikey)
   const responsss = await apifetch.json()
   const actualdata = responsss.meals
-  
+
 }
 
 'z6T7x6sCQoqofSxUH49y7JAPgvUYgK072xGpfNbJ2s8'
@@ -31,7 +31,7 @@ async function renderMeals() {
   const data = await response.json()
   console.log(data);
 
-  data.meals.forEach((meal) => {
+  data.meals.slice(0, 24).forEach((meal) => {
     const mealDiv = document.createElement("div");
     const aTag = document.createElement("a");
     const imageTag = document.createElement("img");
@@ -53,26 +53,14 @@ async function renderMeals() {
 
     aTag.addEventListener("click", () => {
       sessionStorage.setItem("mealId", meal.idMeal);
-  })
+    })
 
     document.getElementById('bestmeall').addEventListener('click', () => {
       console.log("item name: ", meal.strMeal);
     })
-
-
-  })
-
-
-  // const fevMealId = sessionStorage.getItem("mealId")
-
-  // const favMeal = data.meals.find((meal)=> meal.idMeal === fevMealId)
-
-  // console.log("favMeal: ", favMeal)
-
+})
 
 }
-
-
 
 renderMeals()
 
@@ -149,8 +137,8 @@ const displaySuperDelicious = async () => {
 
 displaySuperDelicious();
 
-export function formexport () {
-return `< div class=" form">
+export function formexport() {
+  return `< div class=" form">
 <h1 id="deliciousness">Deliciousness to your inbox</h1>
 <p id="enjoy">Enjoy weekly handpicked and recipes Recommendation</p>
 <div class="footer-form">
@@ -163,5 +151,5 @@ return `< div class=" form">
 </div>`
 }
 
-formexport ()
+formexport()
 

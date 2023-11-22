@@ -323,6 +323,7 @@ form {
 }
 
 .form {
+  margin-top: 50px;
   background-color: #ffd7c9;
   padding-top: 20px;
   padding-bottom: 30px;
